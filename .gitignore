@@ -1,0 +1,16 @@
+*.pyc
+*.swp
+*.egg
+*.egg-info/
+.cache
+build/
+dist/
+sdist/
+.idea/
+virtualenv*
+.env
+venv
+.coverage
+.DS_Store
+.pyre/
+.pytest_cache/
