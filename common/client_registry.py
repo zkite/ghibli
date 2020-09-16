@@ -115,7 +115,7 @@ class CachedClient(BaseApiClient):
         for _ in range(self.number_of_retries):
             data, status_code = await self.make_http_request("GET", url=url, headers=headers)
             if status_code == 200:
-                logger.debug(f"Successfully retrieved data: {data}")
+                logger.debug(f"Data is Successfully retrieved")
                 break
             logger.debug(f"Could not retrieve data. Response status code: {status_code}")
             await asyncio.sleep(self.retry_sleep_time)
